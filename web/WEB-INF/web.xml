@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <servlet>
+        <servlet-name>f_reg_validate</servlet-name>
+        <servlet-class>controller.f_reg_validate</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>s_login_val</servlet-name>
+        <servlet-class>controller.s_login_val</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>f_login_val</servlet-name>
+        <servlet-class>controller.f_login_val</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>std_query</servlet-name>
+        <servlet-class>controller.std_query</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>f_reg_validate</servlet-name>
+        <url-pattern>/f_reg_validate</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>s_login_val</servlet-name>
+        <url-pattern>/s_login_val</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>f_login_val</servlet-name>
+        <url-pattern>/f_login_val</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>std_query</servlet-name>
+        <url-pattern>/std_query</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
